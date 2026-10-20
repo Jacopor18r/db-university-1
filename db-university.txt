@@ -1,0 +1,98 @@
+PUNTO 1 =
+
+SELECT *
+FROM students
+WHERE YEAR(date_of_birth) = '1990';
+
+---------------------------------
+
+PUNTO 2 =
+
+SELECT *
+FROM courses
+WHERE cfu>10;
+
+---------------------------------
+
+PUNTO 3 =
+
+SELECT *
+FROM students
+WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) > 30;
+
+---------------------------------
+
+PUNTO 4 =
+
+SELECT *
+FROM courses
+WHERE period = 'I semestre'
+AND year = '1';
+
+---------------------------------
+
+PUNTO 5 =
+
+SELECT *
+FROM exams
+WHERE hour > '14:00:00'
+AND date = '2020-06-20';
+
+---------------------------------
+
+PUNTO 6 =
+
+SELECT *
+FROM degrees
+WHERE level = 'magistrale';
+
+---------------------------------
+
+PUNTO 7 =
+
+SELECT COUNT(*)
+FROM departments;
+
+---------------------------------
+
+PUNTO 8 =
+
+SELECT COUNT(*) AS numero_insegnanti
+FROM teachers
+WHERE phone IS NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
